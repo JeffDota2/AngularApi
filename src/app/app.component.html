@@ -1,0 +1,24 @@
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<h1>Lista de Productosn</h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Producto</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Fecha de Creacion</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cosas of cosas; let item=index" >
+      <th scope="row">{{item+1}}</th>
+      <td>{{cosas.name}}</td>
+      <td>{{cosas.price}}</td>
+      <td>{{cosas.created_at}}</td>
+
+   
+  </tbody>
+</table>
